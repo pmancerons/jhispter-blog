@@ -20,6 +20,7 @@ export class PostComponent implements OnInit {
 
   predicate = 'id';
   ascending = true;
+  openAccordion: boolean[] = [];
 
   constructor(
     protected postService: PostService,

@@ -1,9 +1,9 @@
 <nav data-cy="navbar" class="navbar navbar-dark navbar-expand-md bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
+    <a class="navbar-brand logo" routerLink="post" (click)="collapseNavbar()">
       <span class="logo-img"></span>
       <span class="navbar-title">Blog</span>
-      <span class="navbar-version">{{ version }}</span>
+      <span class="navbar-version"> A blog dedicated to Jhipster</span>
     </a>
     <a
       class="navbar-toggler d-lg-none"
@@ -20,7 +20,7 @@
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="account !== null">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
+          <a class="nav-link" routerLink="post" (click)="collapseNavbar()">
             <span>
               <fa-icon icon="home"></fa-icon>
               <span>Home</span>
